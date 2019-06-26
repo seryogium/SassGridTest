@@ -11,9 +11,9 @@ var gulp = require('gulp'),
     cache = require('gulp-cache'),
     autoprefixer = require('gulp-autoprefixer');
 
-gulp.task('sass', async function() {
+gulp.task('sass', function() {
     return gulp.src('app/sass/**/*.sass')
-    .pipe(sass())
+    .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true}))   
     .pipe(gulp.dest('app/css'))
     .pipe(browsersync.reload({stream: true}))
@@ -48,7 +48,7 @@ gulp.task('css-libs', function() {
     .pipe(gulp.dest('app/css'));
 });
 
-gulp.task('clean', async function(){
+gulp.task('clean', function(){
     return del.sync('dist');
 });
 
