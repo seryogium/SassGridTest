@@ -48,7 +48,7 @@ gulp.task('css-libs', function() {
     .pipe(gulp.dest('app/css'));
 });
 
-gulp.task('clean', function(){
+gulp.task('clean', async function(){
     return del.sync('dist');
 });
 
