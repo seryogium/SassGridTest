@@ -10,3 +10,7 @@ i have learned some new info for myself
 
 ### code in cmd
 ```gulp```
+
+### Result
+![Image of cmd](app/img/cmd.jpg)
+![Image of browser](app/img/browser.jpg)
