@@ -88,6 +88,6 @@ gulp.task('watch', function() {
     gulp.watch(['app/js/common.js', 'app/libs/**/*.js'], gulp.parallel('scripts'));
 });
 
-gulp.task('default', gulp.parallel('css-libs', 'sass', 'scripts', 'browser-sync', 'watch'));
+gulp.task('default', gulp.parallel('sass', 'css-libs', 'scripts', 'browser-sync', 'watch'));
 
 gulp.task('build', gulp.parallel('build', 'clean', 'img', 'sass', 'scripts'));
