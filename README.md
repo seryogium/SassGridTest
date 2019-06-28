@@ -5,11 +5,11 @@ i have learned some new info for myself
 
 ### To run the test, 
 - open the command line in the file directory, 
-- enter **"gulp"** and wait ... 
+- enter **"npm start"** and wait ... 
 > a browser window will open with the result of the work I have done.
 
 ### code in cmd
-```gulp```
+```npm start```
 
 ### Result
 ![Image of cmd](app/img/cmd.jpg)
